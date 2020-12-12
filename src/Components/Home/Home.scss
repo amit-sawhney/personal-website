@@ -1,0 +1,18 @@
+@import '../../styles/variables.scss';
+
+.content-container {
+    margin-left: $leftShift;
+    margin-top: 80px;
+    display: flex;
+    margin-right: $rightShift;
+
+    .sidebar {
+        float: left;
+    }
+
+    .content {
+        width: 100%;
+        float: right;
+        margin-left: 200px;
+    }
+}
