@@ -1,5 +1,7 @@
+@import '../../styles/variables.scss';
 
 .blog-content {
+    margin-left: $leftShift;
     .temp {
         font-size: 40px;
         font-weight: 100;
