@@ -1,20 +1,51 @@
-@import '../../styles/variables.scss';
+@import "../../styles/variables.scss";
 
 .content-container {
     display: flex;
 
     .sidebar {
         float: left;
+        margin-top: $verticalMargin;
+        text-align: center;
+
+        .avatar {
+            width: 128px;
+            height: 128px;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        .socials {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+            
+            .social-avatar {
+                width: 32px;
+                height: 32px;
+                margin: 0px 10px 0px 10px;
+            }
+        }
     }
 
     .content {
         width: 100%;
         float: right;
         margin-left: 200px;
-    }
+        margin-top: $verticalMargin - 40px;
+        .content-section {
+            background-color: white;
+            box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px,
+                rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px,
+                rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px,
+                rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+            padding: 15px;
+            margin: 75px 0px 75px 0px;
 
-    .avatar {
-        width: 128px;
-        height: 128px;
+            #header {
+                font-size: 2rem;
+                font-weight: 200;
+            }
+        }
     }
 }
