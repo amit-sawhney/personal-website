@@ -1,12 +1,22 @@
-@import '../../styles/variables.scss';
+@import "../../styles/variables.scss";
 
-.navbar-content {
-    margin-left: $leftShift;
-    margin-top: 25px;
+.navbar {
     display: flex;
-    margin-right: $rightShift;
     font-size: 24px;
     font-weight: 400;
+    z-index: 1;
+    color: #fafafa;
+    border-bottom: solid #e4e4e4 .5px;
+
+    .navbar-content {
+        background: #fafafa;
+    }
+
+    #nav-header {
+        margin-left: $leftShift;
+        color: black;
+        text-decoration: none;
+    }
 
     #nav-item {
         color: black;
