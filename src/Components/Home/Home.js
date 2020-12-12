@@ -1,5 +1,6 @@
 import React from 'react';
-import avatar from '../../assets/avatar.png'
+import avatar from '../../assets/avatar.svg'
+import { Avatar } from '@material-ui/core'
 import './Home.scss'
 
 const Home = (props) => {
@@ -7,7 +8,7 @@ const Home = (props) => {
     return (
         <div className="content-container">
             <div className="sidebar">
-                <img width="128px" src={avatar} alt="My avatar" />
+                <Avatar className="avatar" src={avatar} />
                 <p>test</p>
             </div>
             <div className="content">

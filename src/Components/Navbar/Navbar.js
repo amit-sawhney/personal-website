@@ -7,10 +7,10 @@ const Navbar = (props) => {
 
     return (
         <nav className="navbar-content">
-            <h2 style={{flexGrow: 1}}><Link id = "nav-item" to="/">Amit Sawhney</Link></h2>
-            <h2><Link id = "nav-item" to="/">Blog</Link></h2>
-            <h2><Link id = "nav-item" to="/">Contact</Link></h2>
-            
+            <Link style={{ flexGrow: 1 }} id="nav-item" to="/">Amit Sawhney</Link>
+            <Link id="nav-item" to="/">Blog</Link>
+            <Link id="nav-item" to="/">Contact</Link>
+
         </nav>
 
     );

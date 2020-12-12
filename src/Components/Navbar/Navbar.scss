@@ -5,15 +5,12 @@
     margin-top: 25px;
     display: flex;
     margin-right: $rightShift;
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: 400;
 
     #nav-item {
         color: black;
         text-decoration: none;
         margin: 0px 50px 0px 50px;
-        
-        &:hover {
-
-        }
     }
 }
