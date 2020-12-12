@@ -1,3 +1,11 @@
+@import './variables.scss';
+
 html {
     font-family: 'Segoe UI', 'Times New Roman', Times, serif, Geneva, Verdana, sans-serif;
+}
+
+.content {
+    margin-left: $leftShift;
+    margin-top: 80px;
+    margin-right: $rightShift;
 }
