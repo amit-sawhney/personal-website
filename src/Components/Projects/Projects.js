@@ -1,7 +1,8 @@
 import React from 'react';
 import './Projects.scss';
-import { Divider, Grid, Box } from '@material-ui/core'
-import { height } from 'dom-helpers';
+import { Divider, Grid, Box } from '@material-ui/core';
+import studentsmeet from '../../assets/studentsmeet.png';
+import planethunters from '../../assets/planethunters.png';
 
 const Projects = (props) => {
 
@@ -11,10 +12,10 @@ const Projects = (props) => {
             <Divider />
             <div className="grid">
                 <div className="project">
-                    
+                    <img src={studentsmeet} className="project-preview"></img>
                 </div>
                 <div className="project">
-                    
+                    <img src={planethunters} className="project-preview"></img>
                 </div>
                 <div className="project">
                     
