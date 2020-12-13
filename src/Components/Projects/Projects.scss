@@ -1,0 +1,9 @@
+@import '../../styles/colors.scss';
+@import '../../styles/variables.scss';
+
+.projects-header {
+    text-align: center;
+    color: $sectionHeader;
+    font-weight: 300;
+    font-size: 36px;
+}

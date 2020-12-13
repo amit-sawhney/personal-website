@@ -7,6 +7,7 @@ import statefarm from '../../assets/statefarm.jpg';
 import hack4impact from '../../assets/hack4impact.png';
 import { Avatar, Drawer, Link, Toolbar } from '@material-ui/core';
 import Experience from '../Experience/Experience';
+import Projects from '../Projects/Projects';
 import './Home.scss';
 
 const Home = (props) => {
@@ -44,34 +45,8 @@ const Home = (props) => {
             </Drawer>
 
             <div className="content">
-                {/* <div className="content-section">
-                    <text id="header">Experience</text>
-                    <div className="experience-item">
-                        <div className="title">
-                            <img width="50px" src={statefarm} alt="State Farm logo" />
-                            <p id="company"> State Farm | Research Development Center Intern (Spring 2021)</p>
-                        </div>
-                    </div>
-                    <div className="experience-item">
-                        <div className="title">
-                            <img width="50px" src={hack4impact} alt="State Farm logo" />
-                            <p id="company"> Hack4Impact | Software Developer (Fall 2020 - Present)</p>
-                        </div>
-                    </div>
-                    <div className="experience-item">
-                        <div className="title">
-                            <img width="50px" src={statefarm} alt="State Farm logo" />
-                            <p id="company"> State Farm | Enterprise Technology Management Services Intern (Summer 2020)</p>
-                        </div>
-                    </div>
-                    <div className="experience-item">
-                        <div className="title">
-                            <img width="50px" src={statefarm} alt="State Farm logo" />
-                            <p id="company"> State Farm | Enterprise Technology Test Data Management Intern (Summer 2019)</p>
-                        </div>
-                    </div>
-                </div> */}
                 <Experience />
+                <Projects />
             </div>
         </div>
     );
