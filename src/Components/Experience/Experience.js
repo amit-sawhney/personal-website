@@ -1,40 +1,105 @@
 import React from 'react';
-import Timeline from '@material-ui/lab/Timeline';
-import TimelineItem from '@material-ui/lab/TimelineItem';
-import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
-import TimelineConnector from '@material-ui/lab/TimelineConnector';
-import TimelineContent from '@material-ui/lab/TimelineContent';
-import TimelineDot from '@material-ui/lab/TimelineDot';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 import './Experience.scss';
+import { Work as WorkIcon } from '@material-ui/icons';
+import { Divider } from '@material-ui/core';
 
 const Experience = (props) => {
 
     return (
         <div>
-            <h1 className = "experience-header">Work Experience</h1>
-            {/* <Timeline style={{border: 'solid black', padding: 0}}>
-                <TimelineItem>
-                    <TimelineSeparator>
-                        <TimelineDot />
-                        <TimelineConnector />
-                    </TimelineSeparator>
-                    <TimelineContent>Eat</TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                    <TimelineSeparator>
-                        <TimelineDot />
-                        <TimelineConnector />
-                    </TimelineSeparator>
-                    <TimelineContent>Code</TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                    <TimelineSeparator>
-                        <TimelineDot />
-                    </TimelineSeparator>
-                    <TimelineContent>Sleep</TimelineContent>
-                </TimelineItem>
-            </Timeline> */}
-        </div>
+            <h1 className="experience-header">Work Experience</h1>
+            <Divider />
+            <VerticalTimeline className="timeline">
+            <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    contentStyle={{ background: '#7510f7', color: '#fff' }}
+                    contentArrowStyle={{ borderRight: '7px solid rgb(117,16,247)' }}
+                    dateClassName="timeline-date"
+                    iconStyle={{ background: '#F77510', color: '#fff' }}
+                    icon={<WorkIcon />}
+                >
+                    <h2 className="timeline-position">ET Software Developer Intern</h2>
+                    <h2 className="timeline-title">State Farm</h2>
+                    <h4 className="timeline-subtitle">Bloomington, IL</h4>
+                    <em>Summer 2021</em>
+                    <p>Looking to the future...</p>
+                </VerticalTimelineElement>
+            <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    contentStyle={{ background: '#7510f7', color: '#fff' }}
+                    contentArrowStyle={{ borderRight: '7px solid rgb(117,16,247)' }}
+                    dateClassName="timeline-date"
+                    iconStyle={{ background: '#F77510', color: '#fff' }}
+                    icon={<WorkIcon />}
+                >
+                    <h2 className="timeline-position">Software Developer</h2>
+                    <h2 className="timeline-title">Hack4Impact</h2>
+                    <h4 className="timeline-subtitle">Urbana, IL</h4>
+                    <em>Spring 2021</em>
+                    <p>Looking to the future...</p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    contentStyle={{ background: '#7510f7', color: '#fff' }}
+                    contentArrowStyle={{ borderRight: '7px solid rgb(117,16,247)' }}
+                    dateClassName="timeline-date"
+                    iconStyle={{ background: '#F77510', color: '#fff' }}
+                    icon={<WorkIcon />}
+                >
+                    <h2 className="timeline-position">Research Dev. Center Intern</h2>
+                    <h2 className="timeline-title">State Farm</h2>
+                    <h4 className="timeline-subtitle">Urbana, IL</h4>
+                    <em>Spring 2021</em>
+                    <p>Creative Direction, User Experience, Visual Design, Project Management, Team Leading</p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    contentStyle={{ background: '#7510f7', color: '#fff' }}
+                    contentArrowStyle={{ borderRight: '7px solid rgb(117,16,247)' }}
+                    dateClassName="timeline-date"
+                    iconStyle={{ background: '#F77510', color: '#fff' }}
+                    icon={<WorkIcon />}
+                >
+                    <h2 className="timeline-position">ET Management Services Intern</h2>
+                    <h2 className="timeline-title">State Farm</h2>
+                    <h4 className="timeline-subtitle">Bloomington, IL</h4>
+                    <em>Summer 2020</em>
+                    <p>Creative Direction, User Experience, Visual Design, Project Management, Team Leading</p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    contentStyle={{ background: '#7510f7', color: '#fff' }}
+                    contentArrowStyle={{ borderRight: '7px solid rgb(117,16,247)' }}
+                    dateClassName="timeline-date"
+                    iconStyle={{ background: '#F77510', color: '#fff' }}
+                    icon={<WorkIcon />}
+                >
+                    <h2 className="timeline-position">Software Developer</h2>
+                    <h2 className="timeline-title">Hack4Impact</h2>
+                    <h4 className="timeline-subtitle">Urbana, IL</h4>
+                    <em>Fall 2020</em>
+                    <p>Creative Direction, User Experience, Visual Design, Project Management, Team Leading</p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    contentStyle={{ background: '#7510f7', color: '#fff' }}
+                    contentArrowStyle={{ borderRight: '7px solid rgb(117,16,247)' }}
+                    dateClassName="timeline-date"
+                    iconStyle={{ background: '#F77510', color: '#fff' }}
+                    icon={<WorkIcon />}
+                >
+                    <h2 className="timeline-position">ET Test Data Management Intern</h2>
+                    <h2 className="timeline-title">State Farm</h2>
+                    <h4 className="timeline-subtitle">Bloomington, IL</h4>
+                    <em>Summer 2019</em>
+                    <p>Creative Direction, User Experience, Visual Design, Project Management, Team Leading</p>
+                </VerticalTimelineElement>
+                
+                
+            </VerticalTimeline>
+        </div >
     )
 }
 

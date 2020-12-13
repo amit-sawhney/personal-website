@@ -4,4 +4,32 @@
 .experience-header {
     text-align: center;
     color: $sectionHeader;
+    font-weight: 300;
+    font-size: 36px;
+}
+
+
+.timeline {
+    
+    .timeline-date {
+        margin-right: 15px;
+    }
+
+    .timeline-title {
+        margin: 0;   
+        color: #fff
+    }
+
+    .timeline-subtitle {
+        margin: 0;
+    }
+
+    .timeline-position {
+        margin: 0;
+        color: #fff;
+    }
+
+    .timeline-content {
+        background-color: $timelineEvent;
+    }
 }
