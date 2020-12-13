@@ -6,6 +6,7 @@ import linkedin from '../../assets/linkedin.svg';
 import statefarm from '../../assets/statefarm.jpg';
 import hack4impact from '../../assets/hack4impact.png';
 import { Avatar, Drawer, Link, Toolbar } from '@material-ui/core';
+import Experience from '../Experience/Experience';
 import './Home.scss';
 
 const Home = (props) => {
@@ -43,7 +44,7 @@ const Home = (props) => {
             </Drawer>
 
             <div className="content">
-                <div className="content-section">
+                {/* <div className="content-section">
                     <text id="header">Experience</text>
                     <div className="experience-item">
                         <div className="title">
@@ -69,7 +70,8 @@ const Home = (props) => {
                             <p id="company"> State Farm | Enterprise Technology Test Data Management Intern (Summer 2019)</p>
                         </div>
                     </div>
-                </div>
+                </div> */}
+                <Experience />
             </div>
         </div>
     );

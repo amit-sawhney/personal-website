@@ -1,10 +1,11 @@
 @import './variables.scss';
+@import './colors.scss';
 
 html {
     font-family: 'Segoe UI', 'Times New Roman', Times, serif, Geneva, Verdana, sans-serif;
-    background-color: #fafafa;
+    background-color: $background;
 }
 
 .content {
-    margin-top: $verticalMargin;
+    margin-top: $verticalMargin - 40;
 }

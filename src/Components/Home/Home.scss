@@ -1,4 +1,5 @@
 @import "../../styles/variables.scss";
+@import "../../styles/colors.scss";
 
 .content-container {
     display: flex;
@@ -12,7 +13,7 @@
 
     .drawerPaper {
         width: $drawerWidth;
-        background-color: #fafafa;
+        background-color: $background;
         border-right: none;
     }
 
@@ -54,8 +55,6 @@
         width: 100%;
         float: right;
         margin-left: 125px;
-        margin-top: -75px;
-        overflow-y: scroll;
         padding-right: $rightShift;
         .content-section {
             background-color: white;
