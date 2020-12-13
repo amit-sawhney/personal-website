@@ -93,6 +93,38 @@ const Projects = (props) => {
                     </div>
                 </div>
                 <div className="project">
+                    <img src={statefarm} className="project-preview"></img>
+                    <div className="overlay">
+                        <div>
+                            <h3 style={{ marginBottom: 0 }}>Mentors Meet</h3>
+                        </div>
+                        <div>
+                            <p style={{ marginTop: 0 }}>State Farm Hackathon</p>
+                        </div>
+                        <div>
+                            <RouterLink to="tdm" className="view-link">
+                                <Button className="view-button">View Info</Button>
+                            </RouterLink>
+                        </div>
+                    </div>
+                </div>
+                <div className="project">
+                    <img src={statefarm} className="project-preview"></img>
+                    <div className="overlay">
+                        <div>
+                            <h3 style={{ marginBottom: 0 }}>SFEA Redesign</h3>
+                        </div>
+                        <div>
+                            <p style={{ marginTop: 0 }}>State Farm Hackathon</p>
+                        </div>
+                        <div>
+                            <RouterLink to="tdm" className="view-link">
+                                <Button className="view-button">View Info</Button>
+                            </RouterLink>
+                        </div>
+                    </div>
+                </div>
+                <div className="project">
                     <img src={studentsmeet} className="project-preview"></img>
                     <div className="overlay">
                         <div>
