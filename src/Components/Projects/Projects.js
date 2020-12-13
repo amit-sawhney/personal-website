@@ -1,6 +1,6 @@
 import React from 'react';
 import './Projects.scss';
-import { Divider, Grid, Box } from '@material-ui/core';
+import { Divider, Grid, Box, Button } from '@material-ui/core';
 import studentsmeet from '../../assets/studentsmeet.png';
 import planethunters from '../../assets/planethunters.png';
 import personalwebsite from '../../assets/personalwebsite.png';
@@ -23,6 +23,10 @@ const Projects = (props) => {
                         <div>
                             <p style={{marginTop: 0}}>Hackathon</p>
                         </div>
+                        <div>
+                            <Button className="view-button">View Info</Button>
+                            <Button className="view-button">View App</Button>
+                        </div>
                     </div>
                 </div>
                 <div className="project">
@@ -33,6 +37,9 @@ const Projects = (props) => {
                         </div>
                         <div>
                             <p style={{marginTop: 0}}>Class ML/DL Project</p>
+                        </div>
+                        <div>
+                            <Button className="view-button">View Info</Button>
                         </div>
                     </div>
                 </div>
@@ -56,6 +63,9 @@ const Projects = (props) => {
                         <div>
                             <p style={{marginTop: 0}}>Hack4Impact Fall 2020</p>
                         </div>
+                        <div>
+                            <Button className="view-button">View Info</Button>
+                        </div>
                     </div>
                 </div>
                 <div className="project">
@@ -67,6 +77,9 @@ const Projects = (props) => {
                         <div>
                             <p style={{marginTop: 0}}>State Farm Summer 2020</p>
                         </div>
+                        <div>
+                            <Button className="view-button">View Info</Button>
+                        </div>
                     </div>
                 </div>
                 <div className="project">
@@ -77,6 +90,9 @@ const Projects = (props) => {
                         </div>
                         <div>
                             <p style={{marginTop: 0}}>State Farm Summer 2019</p>
+                        </div>
+                        <div>
+                            <Button className="view-button">View Info</Button>
                         </div>
                     </div>
                 </div>
