@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/Home/Home';
 import Blog from './Components/Blog/Blog';
+import ProjectInfo from './Components/Students Meet/StudentsMeet';
 
 import './styles/styles.scss';
 
@@ -20,6 +21,9 @@ function App() {
             </Route>
             <Route exact path="/blog">
               <Blog />
+            </Route>
+            <Route exact path="/studentsmeet">
+              <ProjectInfo />
             </Route>
           </div>
         </Switch>

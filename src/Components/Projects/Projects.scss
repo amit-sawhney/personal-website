@@ -71,23 +71,26 @@
             color: white;
 
             &:hover {
-                transition: all .3s ease-in-out;
+                transition: all 0.3s ease-in-out;
                 background-color: rgba(59, 60, 53, 0.7);
-                
             }
         }
 
-        .view-button {
-            border: solid #86A00F 2px;
-            background-color: #86A00F;
-            border-radius: 10px;
-            color: white;
-            margin: 5px 10px 5px 10px;
+        .view-link {
+            text-decoration: none;
+            .view-button {
+                border: solid #86a00f 2px;
+                background-color: #86a00f;
+                border-radius: 10px;
+                color: white;
+                margin: 5px 10px 5px 10px;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
-            &:hover {
-                transition: all .3s ease-in-out;
-                background-color: #72890C;
-                border-color: #72890C;
+                &:hover {
+                    transition: all 0.3s ease-in-out;
+                    background-color: #72890c;
+                    border-color: #72890c;
+                }
             }
         }
     }
