@@ -1,6 +1,7 @@
 import React from 'react';
 import './Projects.scss';
-import { Divider } from '@material-ui/core'
+import { Divider, Grid, Box } from '@material-ui/core'
+import { height } from 'dom-helpers';
 
 const Projects = (props) => {
 
@@ -8,7 +9,24 @@ const Projects = (props) => {
         <div>
             <h1 className="projects-header">Featured Projects</h1>
             <Divider />
-            <h1>test</h1>
+            <div className="grid">
+                <div className="project">
+                    
+                </div>
+                <div className="project">
+                    
+                </div>
+                <div className="project">
+                    
+                </div>
+                <div className="project">
+                    
+                </div>
+                <div className="project">
+                    
+                </div>
+
+            </div>
         </div>
     )
 }
