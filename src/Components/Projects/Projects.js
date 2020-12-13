@@ -16,21 +16,34 @@ const Projects = (props) => {
             <Divider />
             <div className="grid">
                 <div className="project">
-                    <img src={studentsmeet} className="project-preview"></img>
+                    <img src={dashboard} className="project-preview"></img>
                     <div className="overlay">
                         <div>
-                            <h3 style={{ marginBottom: 0 }}>Students Meet</h3>
+                            <h3 style={{ marginBottom: 0 }}>3DP4ME Dashboard</h3>
                         </div>
                         <div>
-                            <p style={{ marginTop: 0 }}>Hackathon</p>
+                            <p style={{ marginTop: 0 }}>Hack4Impact Fall 2020</p>
                         </div>
                         <div>
-                            <RouterLink to="studentsmeet" className="view-link">
+                            <RouterLink to="3dp4me" className="view-link">
                                 <Button className="view-button">View Info</Button>
                             </RouterLink>
-                            <ExternalLink target="_blank" href="http://studentsmeet.herokuapp.com/" className="view-link">
-                                <Button className="view-button">View App</Button>
-                            </ExternalLink>
+                        </div>
+                    </div>
+                </div>
+                <div className="project">
+                    <img src={statefarm} className="project-preview"></img>
+                    <div className="overlay">
+                        <div>
+                            <h3 style={{ marginBottom: 0 }}>Technical Recovery Plan</h3>
+                        </div>
+                        <div>
+                            <p style={{ marginTop: 0 }}>State Farm Summer 2020</p>
+                        </div>
+                        <div>
+                            <RouterLink to="trp" className="view-link">
+                                <Button className="view-button">View Info</Button>
+                            </RouterLink>
                         </div>
                     </div>
                 </div>
@@ -44,7 +57,7 @@ const Projects = (props) => {
                             <p style={{ marginTop: 0 }}>Class ML/DL Project</p>
                         </div>
                         <div>
-                            <RouterLink className="view-link">
+                            <RouterLink to="planethunters" className="view-link">
                                 <Button className="view-button">View Info</Button>
                             </RouterLink>
                         </div>
@@ -61,38 +74,8 @@ const Projects = (props) => {
                         </div>
                     </div>
                 </div>
-                <div className="project">
-                    <img src={dashboard} className="project-preview"></img>
-                    <div className="overlay">
-                        <div>
-                            <h3 style={{ marginBottom: 0 }}>3DP4ME Dashboard</h3>
-                        </div>
-                        <div>
-                            <p style={{ marginTop: 0 }}>Hack4Impact Fall 2020</p>
-                        </div>
-                        <div>
-                            <RouterLink className="view-link">
-                                <Button className="view-button">View Info</Button>
-                            </RouterLink>
-                        </div>
-                    </div>
-                </div>
-                <div className="project">
-                    <img src={statefarm} className="project-preview"></img>
-                    <div className="overlay">
-                        <div>
-                            <h3 style={{ marginBottom: 0 }}>Technical Recovery Plan</h3>
-                        </div>
-                        <div>
-                            <p style={{ marginTop: 0 }}>State Farm Summer 2020</p>
-                        </div>
-                        <div>
-                            <RouterLink className="view-link">
-                                <Button className="view-button">View Info</Button>
-                            </RouterLink>
-                        </div>
-                    </div>
-                </div>
+
+
                 <div className="project">
                     <img src={statefarm} className="project-preview"></img>
                     <div className="overlay">
@@ -103,9 +86,28 @@ const Projects = (props) => {
                             <p style={{ marginTop: 0 }}>State Farm Summer 2019</p>
                         </div>
                         <div>
-                            <RouterLink className="view-link">
+                            <RouterLink to="tdm" className="view-link">
                                 <Button className="view-button">View Info</Button>
                             </RouterLink>
+                        </div>
+                    </div>
+                </div>
+                <div className="project">
+                    <img src={studentsmeet} className="project-preview"></img>
+                    <div className="overlay">
+                        <div>
+                            <h3 style={{ marginBottom: 0 }}>Students Meet</h3>
+                        </div>
+                        <div>
+                            <p style={{ marginTop: 0 }}>Hackathon</p>
+                        </div>
+                        <div>
+                            <RouterLink to="studentsmeet" className="view-link">
+                                <Button className="view-button">View Info</Button>
+                            </RouterLink>
+                            <ExternalLink target="_blank" href="http://studentsmeet.herokuapp.com/" className="view-link">
+                                <Button className="view-button">View App</Button>
+                            </ExternalLink>
                         </div>
                     </div>
                 </div>
