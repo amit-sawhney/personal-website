@@ -2,16 +2,17 @@
 @import "../../styles/colors.scss";
 
 .content-container {
-    display: flex;
+    // display: flex;
 
     .drawer {
-        width: $drawerWidth;
+        // width: $drawerWidth;
         flex-shrink: 0;
         z-index: 0;
         padding-top: $navbarHeight;
     }
 
     .drawerPaper {
+        z-index: 0;
         width: $drawerWidth;
         background-color: $background;
         border-right: none;
@@ -23,6 +24,7 @@
     }
 
     .sidebar {
+        
         float: left;
         margin-top: $verticalMargin;
         margin-left: $leftShift;
@@ -53,7 +55,6 @@
 
     .content {
         width: 100%;
-        float: right;
         // margin-left: 125px;
         // padding-right: $rightShift;
         .content-section {
@@ -88,4 +89,81 @@
             }
         }
     }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .content-container {
+        // display: flex;
+        // width: 100%;
+    
+        .sidebar {
+            width: 100%;
+            margin: auto;
+            margin-top: $verticalMargin;
+            text-align: center;
+            // position: -webkit-sticky;
+            position: relative;
+            top: 0;
+            margin-bottom: 50px;
+    
+            .avatar {
+                width: 200px;
+                height: 200px;
+                margin: auto;
+                margin-bottom: 30px;
+            }
+    
+            .socials {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 50px;
+    
+                .social-avatar {
+                    width: 32px;
+                    height: 32px;
+                    margin: 0px 10px 0px 10px;
+                }
+            }
+        }
+    
+        .content {
+            width: 100%;
+            // float: right;
+            // margin-left: 125px;
+            // padding-right: $rightShift;
+            .content-section {
+                background-color: white;
+                box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px,
+                    rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px,
+                    rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px,
+                    rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+                // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                padding: 15px;
+                margin: 75px 0px 75px 0px;
+    
+                #header {
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+    
+                .experience-item {
+                    font-weight: 200;
+    
+                    .title {
+                        display: flex;
+                        align-items: center;
+                        #company {
+                            font-size: 21px;
+                        }
+                    }
+    
+                    #description {
+                        margin: 0px 0px 15px 50px;
+                    }
+                }
+            }
+        }
+    }
+
 }

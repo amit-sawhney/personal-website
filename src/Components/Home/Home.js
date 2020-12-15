@@ -9,40 +9,67 @@ import { Avatar, Drawer, Link, Toolbar } from '@material-ui/core';
 import Experience from '../Experience/Experience';
 import Projects from '../Projects/Projects';
 import './Home.scss';
+import useWindowSize from '../../hooks/useWindowSize';
 
 const Home = (props) => {
 
+    const size = useWindowSize();
+
+    console.log(size.width);
+
     return (
         <div className="content-container">
-            <Drawer
-                className="drawer"
-                variant="permanent"
-                classes={{
-                    paper: "drawerPaper",
-                }}
-            >
-                <Toolbar />
-                <div className="drawerContainer">
-                    <div className="sidebar">
-                        <Avatar className="avatar" src={avatar} />
-                        <div className="socials">
-                            <Link rel="noopener" target="_blank" href="https://github.com/amit-sawhney">
-                                <Avatar className="social-avatar" src={github} />
-                            </Link>
-                            <Link rel="noopener" target="_blank" href="https://www.linkedin.com/in/amit-m-sawhney/">
-                                <Avatar variant="square" className="social-avatar" src={linkedin} />
-                            </Link>
-                            <Link rel="noopener" target="_blank" href="https://www.instagram.com/amit__02/">
-                                <Avatar variant="square" className="social-avatar" src={instagram} />
-                            </Link>
-                        </div>
-                        <p>{`Computer Science + Mathematics`}</p>
-                        <p>{`@ UIUC May '24`}</p>
-                        <p>{`James Scholar`}</p>
-                        <p>{`GPA: 4.0 / 4.0`}</p>
+            {size.width <= 1200 ? (
+                <div className="sidebar">
+                    <Avatar className="avatar" src={avatar} />
+                    <div className="socials">
+                        <Link rel="noopener" target="_blank" href="https://github.com/amit-sawhney">
+                            <Avatar className="social-avatar" src={github} />
+                        </Link>
+                        <Link rel="noopener" target="_blank" href="https://www.linkedin.com/in/amit-m-sawhney/">
+                            <Avatar variant="square" className="social-avatar" src={linkedin} />
+                        </Link>
+                        <Link rel="noopener" target="_blank" href="https://www.instagram.com/amit__02/">
+                            <Avatar variant="square" className="social-avatar" src={instagram} />
+                        </Link>
                     </div>
+                    <p>{`Computer Science + Mathematics`}</p>
+                    <p>{`@ UIUC May '24`}</p>
+                    <p>{`James Scholar`}</p>
+                    <p>{`GPA: 4.0 / 4.0`}</p>
                 </div>
-            </Drawer>
+            ) : (
+                    <Drawer
+                        className="drawer"
+                        variant="permanent"
+                        classes={{
+                            paper: "drawerPaper",
+                        }}
+                    >
+                        <Toolbar />
+                        <div className="drawerContainer">
+                            <div className="sidebar">
+                                <Avatar className="avatar" src={avatar} />
+                                <div className="socials">
+                                    <Link target="_blank" href="https://github.com/amit-sawhney">
+                                        <Avatar className="social-avatar" src={github} />
+                                    </Link>
+                                    <Link rel="noopener" target="_blank" href="https://www.linkedin.com/in/amit-m-sawhney/">
+                                        <Avatar variant="square" className="social-avatar" src={linkedin} />
+                                    </Link>
+                                    <Link rel="noopener" target="_blank" href="https://www.instagram.com/amit__02/">
+                                        <Avatar variant="square" className="social-avatar" src={instagram} />
+                                    </Link>
+                                </div>
+                                <p>{`Computer Science + Mathematics`}</p>
+                                <p>{`@ UIUC May '24`}</p>
+                                <p>{`James Scholar`}</p>
+                                <p>{`GPA: 4.0 / 4.0`}</p>
+                            </div>
+                        </div>
+                    </Drawer>
+
+                )}
 
             <div className="content">
                 <Experience />

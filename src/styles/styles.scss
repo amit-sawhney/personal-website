@@ -6,7 +6,20 @@ html {
     background-color: $background;
 }
 
-.content {
-    margin-top: $verticalMargin - 40;
+.main-content {
+    margin-top: $verticalMargin - 100;
     margin-right: $rightShift;
+    width: 60%;
+    margin-left: $drawerWidth;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .main-content {
+        margin-right: 0;
+        margin-top: 20px;
+        width: 100%;
+        margin-left: 0;
+    }
+
 }

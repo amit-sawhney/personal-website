@@ -1,20 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
-// Usage
-function App() {
-  const size = useWindowSize();
-
-  return (
-    <div>
-      {size.width}px / {size.height}px
-    </div>
-  );
-}
-
-// Hook
-function useWindowSize() {
-  // Initialize state with undefined width/height so server and client renders match
-  // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
+export default function useWindowSize() {
+  
   const [windowSize, setWindowSize] = useState({
     width: undefined,
     height: undefined,
