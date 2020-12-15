@@ -1,35 +1,83 @@
-@import '../../styles/variables.scss';
-@import '../../styles/colors.scss';
+@import "../../styles/variables.scss";
+@import "../../styles/colors.scss";
 
-.experience-header {
-    text-align: center;
-    color: $sectionHeader;
-    font-weight: 300;
-    font-size: 36px;
+.experience-section {
+    .experience-header {
+        text-align: center;
+        color: $sectionHeader;
+        font-weight: 300;
+        font-size: 36px;
+    }
+
+    .timeline-wrapper {
+        .timeline {
+            .timeline-date {
+                margin-right: 15px;
+            }
+
+            .timeline-title {
+                margin: 0;
+                color: #fff;
+            }
+
+            .timeline-subtitle {
+                margin: 0;
+            }
+
+            .timeline-position {
+                margin: 0;
+                color: #fff;
+            }
+
+            .timeline-content {
+                background-color: $timelineEvent;
+            }
+        }
+    }
 }
 
+@media only screen and (max-width: 768px) {
+    .experience-section {
+        width: 90%;
+        margin: auto;
+        .experience-header {
+            text-align: center;
+            color: $sectionHeader;
+            font-weight: 300;
+            font-size: 25px;
+        }
 
-.timeline {
-    
-    .timeline-date {
-        margin-right: 15px;
-    }
+        .timeline-wrapper {
+            .timeline {
+                .timeline-date {
+                    margin-right: 15px;
+                }
 
-    .timeline-title {
-        margin: 0;   
-        color: #fff
-    }
+                .timeline-title {
+                    margin: 0;
+                    color: #fff;
+                    font-size: 18px;
+                }
 
-    .timeline-subtitle {
-        margin: 0;
-    }
+                .timeline-subtitle {
+                    margin: 0;
+                    font-size: 18px;
+                }
 
-    .timeline-position {
-        margin: 0;
-        color: #fff;
-    }
+                .timeline-position {
+                    margin: 0;
+                    color: #fff;
+                    font-size: 18px;
+                }
 
-    .timeline-content {
-        background-color: $timelineEvent;
+                .timeline-description {
+                    font-size: 18px;
+                }
+
+                .timeline-content {
+                    background-color: $timelineEvent;
+                }
+            }
+        }
     }
 }

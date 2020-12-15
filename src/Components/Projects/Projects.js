@@ -7,8 +7,11 @@ import planethunters from '../../assets/planethunters.png';
 import personalwebsite from '../../assets/personalwebsite.png';
 import dashboard from '../../assets/dashboard.png';
 import statefarm from '../../assets/statefarm.jpg';
+import useWindowSize from '../../hooks/useWindowSize';
 
 const Projects = (props) => {
+
+    const size = useWindowSize();
 
     return (
         <div>
@@ -17,14 +20,14 @@ const Projects = (props) => {
             <div className="grid">
                 <div className="project">
                     <img src={dashboard} className="project-preview"></img>
-                    <div className="overlay">
-                        <div>
-                            <h3 style={{ marginBottom: 0 }}>3DP4ME Dashboard</h3>
-                        </div>
-                        <div>
-                            <p style={{ marginTop: 0 }}>Hack4Impact Fall 2020</p>
-                        </div>
-                        <div>
+                    <div>
+                        <div className="overlay">
+                            <div>
+                                <h3 style={{ marginBottom: 0 }}>3DP4ME Dashboard</h3>
+                            </div>
+                            <div>
+                                <p style={{ marginTop: 0 }}>Hack4Impact Fall 2020</p>
+                            </div>
                             <RouterLink to="3dp4me" className="view-link">
                                 <Button className="view-button">View Info</Button>
                             </RouterLink>

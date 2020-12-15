@@ -25,3 +25,30 @@
         margin: 0px 50px 0px 50px;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        display: flex;
+        font-size: 16px;
+        font-weight: 400;
+        z-index: 1;
+        color: #fafafa;
+        border-bottom: solid #efefef 2px;
+    
+        .navbar-content {
+            background: $background;
+        }
+    
+        #nav-header {
+            margin-left: 10px;
+            color: black;
+            text-decoration: none;
+        }
+    
+        #nav-item {
+            color: black;
+            text-decoration: none;
+            // margin: 0px 50px 0px 50px;
+        }
+    }
+}
