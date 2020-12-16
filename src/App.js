@@ -16,7 +16,7 @@ import './styles/styles.scss';
 function App() {
   return (
     <div className="root">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Navbar />
         <Switch>
           <div className="main-content">
