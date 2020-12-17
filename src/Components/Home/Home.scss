@@ -2,10 +2,8 @@
 @import "../../styles/colors.scss";
 
 .content-container {
-    // display: flex;
 
     .drawer {
-        // width: $drawerWidth;
         flex-shrink: 0;
         z-index: 0;
         padding-top: $navbarHeight;
@@ -54,16 +52,10 @@
     }
 
     .content {
-        width: 100%;
-        // margin-left: 125px;
-        // padding-right: $rightShift;
+        margin-left: $drawerWidth;
+        margin-right: $rightShift;
         .content-section {
             background-color: white;
-            box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px,
-                rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px,
-                rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px,
-                rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
-            // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             padding: 15px;
             margin: 75px 0px 75px 0px;
 
