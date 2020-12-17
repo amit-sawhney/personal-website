@@ -61,10 +61,12 @@ const Home = (props) => {
                                         <Avatar variant="square" className="social-avatar" src={instagram} />
                                     </Link>
                                 </div>
-                                <p>{`Computer Science + Mathematics`}</p>
-                                <p>{`@ UIUC May '24`}</p>
-                                <p>{`James Scholar`}</p>
-                                <p>{`GPA: 4.0 / 4.0`}</p>
+                                <div className="about-section">
+                                    <p>{`Computer Science + Mathematics`}</p>
+                                    <p>{`@ UIUC May '24`}</p>
+                                    <p>{`James Scholar`}</p>
+                                    <p>{`GPA: 4.0 / 4.0`}</p>
+                                </div>
                             </div>
                         </div>
                     </Drawer>
