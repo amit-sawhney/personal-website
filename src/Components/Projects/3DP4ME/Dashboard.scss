@@ -1,10 +1,21 @@
 @import '../../../styles/variables.scss';
 
 .project-info-content {
-    margin-left: $leftShift;
-    .temp {
-        margin-top: 5 * $verticalMargin;
-        font-size: 40px;
-        font-weight: 100;
+    margin-top: $navbarHeight;
+    margin-right: $rightShift + 200px;
+    padding-left: 250px;
+    margin-bottom: 50px;
+
+    .section {
+        .header {
+            font-size: 36px;
+            font-weight: 300;
+        }
+
+        .section-content {
+            font-size: 20px;
+            font-weight: 200;
+            line-height: 30px;
+        }
     }
 }

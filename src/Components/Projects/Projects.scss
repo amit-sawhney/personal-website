@@ -70,6 +70,10 @@
             margin: 0px 0px 0px 0px;
             color: white;
 
+            .project-btn-group {
+                display: flex;
+            }
+
             &:hover {
                 transition: all 0.3s ease-in-out;
                 background-color: rgba(59, 60, 53, 0.7);

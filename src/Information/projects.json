@@ -1,0 +1,66 @@
+[
+    {
+        "title": "3DP4ME Dashboard",
+        "subtitle": "Hack4Impact Fall 2020",
+        "viewInfo": true,
+        "viewApp": false,
+        "img": "dashboard",
+        "to": "3dp4me"
+    },
+    {
+        "title": "Technical Recovery Plan",
+        "subtitle": "State Farm Summer 2020",
+        "viewInfo": true,
+        "viewApp": false,
+        "img": "statefarm",
+        "to": "trp"
+    },
+    {
+        "title": "Planet Hunters",
+        "subtitle": "Class ML/DL Project",
+        "viewInfo": true,
+        "viewApp": false,
+        "img": "planethunters",
+        "to": "planethunters"
+    },
+    {
+        "title": "Personal Website",
+        "subtitle": "Side Project",
+        "viewInfo": false,
+        "viewApp": false,
+        "img": "personalwebsite"
+    },
+    {
+        "title": "DropOff/TDM Exception",
+        "subtitle": "State Farm Summer 2019",
+        "viewInfo": true,
+        "viewApp": false,
+        "img": "statefarm",
+        "to": "tdm"
+    },
+    {
+        "title": "Mentors Meet",
+        "subtitle": "State Farm Hackathon",
+        "viewInfo": true,
+        "viewApp": false,
+        "img": "statefarm",
+        "to": "mentorsmeet"
+    },
+    {
+        "title": "SFEA Redesign",
+        "subtitle": "State Farm Hackathon",
+        "viewInfo": true,
+        "viewApp": false,
+        "img": "statefarm",
+        "to": "sfea"
+    },
+    {
+        "title": "Students Meet",
+        "subtitle": "Hackathon",
+        "viewInfo": true,
+        "viewApp": true,
+        "url": "http://studentsmeet.herokuapp.com/",
+        "img": "studentsmeet",
+        "to": "studentsmeet"
+    }
+]
