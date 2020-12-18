@@ -1,0 +1,44 @@
+[
+    {
+        "position": "ET Software Developer Intern",
+        "company": "State Farm",
+        "location": "Bloomington, IL",
+        "date": "Summer 2021",
+        "description": "Looking to the future..."
+    },
+    {
+        "position": "Software Developer",
+        "company": "Hack4Impact",
+        "location": "Urbana, IL",
+        "date": "Spring 2021",
+        "description": "Looking to the future..."
+    },
+    {
+        "position": "Research Dev. Center Intern",
+        "company": "State Farm",
+        "location": " Urbana, IL",
+        "date": "Spring 2021",
+        "description": "Looking to the future"
+    },
+    {
+        "position": "Software Developer",
+        "company": "Hack4Impact",
+        "location": "Urbana, IL",
+        "date": "Fall 2020",
+        "description": "Developed a dashboard that allows the 3DP4ME nonprofit increase the design and distribution of 3D printed hearing aids to low income citizens of Jordan"
+    },
+    {
+        "position": "ET Management Services Intern",
+        "company": "State Farm",
+        "location": "Bloomington, IL",
+        "date": "Summer 2020",
+        "description": "Developed a Technical Recovery Plan application that supported application backups"
+    },
+    {
+        "position": "ET Test DAta Management Intern",
+        "company": "State Farm",
+        "location": "Bloomington, IL",
+        "date": "Summer 2019",
+        "description": "Developed Dropoff, an application that tracks and manages form approval through company management"
+    }
+]

@@ -8,6 +8,7 @@ import hack4impact from '../../assets/hack4impact.png';
 import { Avatar, Drawer, Link, Toolbar } from '@material-ui/core';
 import Experience from '../Experience/Experience';
 import Projects from '../Projects/Projects';
+import About from '../About/About';
 import './Home.scss';
 import useWindowSize from '../../hooks/useWindowSize';
 
@@ -62,9 +63,15 @@ const Home = (props) => {
                                     </Link>
                                 </div>
                                 <div className="about-section">
+                                    <b>Major</b>
                                     <p>{`Computer Science + Mathematics`}</p>
-                                    <p>{`@ UIUC May '24`}</p>
+                                    <b>School</b>
+                                    <p>{`University of Illinois @ Urbana-Champaign`}</p>
+                                    <b>Graduation</b>
+                                    <p>May 2024</p>
+                                    <b>Academic Accolade</b>
                                     <p>{`James Scholar`}</p>
+                                    <b>Current GPA</b>
                                     <p>{`GPA: 4.0 / 4.0`}</p>
                                 </div>
                             </div>
@@ -74,6 +81,7 @@ const Home = (props) => {
                 )}
 
             <div className="content">
+                <About />
                 <Experience />
                 <Projects />
             </div>
