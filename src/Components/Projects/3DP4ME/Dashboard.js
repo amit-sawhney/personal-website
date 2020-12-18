@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Dashboard.scss';
 
 const Dashboard = (props) => {
+
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, [])
 
     return (
         <div className="project-info-content">
